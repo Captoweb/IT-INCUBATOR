@@ -180,8 +180,43 @@ const myStr = "My name is" + myName + "and  and I am well!";
 
 
 
+// 21 декабря
+
+// 31 Appending Variables to Strings
+const someAdjective = "useful";
+let myStr = "Learning to code is ";
+myStr += someAdjective;
 
 
+
+// 32 Find the Length of a String
+let lastNameLength = 0;
+const lastName = "Lovelace";
+
+lastNameLength = lastName.length;
+
+
+
+// 33 Use Bracket Notation to Find the First Character in a String
+let firstLetterOfLastName = "";
+const lastName = "Lovelace";
+
+firstLetterOfLastName = lastName[0]; 
+
+
+
+// 34 Understand String Immutability
+let myStr = "Jello World";
+
+//myStr[0] = "H"; // Change this line
+myStr = "Hello World";
+
+
+
+// 35 Use Bracket Notation to Find the Nth Character in a String
+const lastName = "Lovelace";
+
+const thirdLetterOfLastName = lastName[2]; 
 
 
 

@@ -154,10 +154,75 @@ function warnTheSheep(queue) {
     for (let i = 0; i < queue.length; i++) {
         if (queue[i] == "wolf") {
              return `Oi! Sheep number ${i}! You are about to be eaten by a wolf!`
-            // console.log('Oi! Sheep number', i ,'! You are about to be eaten by a wolf!')
         }  
      }
    
-  }
+}
 
 
+
+
+// 21 декабря  
+
+// Opposite number
+function opposite(number) {
+    //your code here
+    return number * (-1)
+}
+
+
+
+// Is this my tail?
+function correctTail(body, tail) {
+    return body[body.length - 1] == tail
+}
+
+
+
+// Beginner - Reduce but Grow
+function grow(x){
+    let mult = 1
+    x.map(item => {
+       mult *= item 
+    })
+    return mult
+}
+
+
+
+// Counting sheep...
+function countSheeps(sheep) {
+    let count = 0
+    for (let i = 0; i < sheep.length; i++) {
+        if (sheep[i] === true) count++
+    }
+    return count
+}
+
+
+
+// Removing Elements
+function removeEveryOther(arr){
+    let newArr = []
+    for (let i = 0; i < arr.length; i+=2) {
+      newArr.push(arr[i])
+    }
+    return newArr
+}
+
+
+// Grader
+function grader(score) {
+    if (score > 1 || score < 0.6) return 'F'
+    if (score < 0.7) return 'D'
+    if (score < 0.8) return 'C'
+    if (score < 0.9) return 'B'
+    return 'A'
+}
+
+
+// You only need one - Beginner
+function check(a, x) {
+    let res = a.indexOf(x)
+    if (res == -1) {return false} else {return true}
+}
