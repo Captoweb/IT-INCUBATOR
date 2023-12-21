@@ -226,3 +226,15 @@ function check(a, x) {
     let res = a.indexOf(x)
     if (res == -1) {return false} else {return true}
 }
+
+
+
+// 22 декабря
+// Find the Remainder
+function remainder(n, m){
+    if (n > m) {
+      return n % m
+    } else {
+      return m % n
+    }
+  }
