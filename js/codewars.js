@@ -237,4 +237,13 @@ function remainder(n, m){
     } else {
       return m % n
     }
-  }
+}
+
+// Exclamation marks series #4
+function remove (string) {
+    let arr = string.split('')
+    for (let i = 0; i < arr.length; i++) {
+        if (arr[i] == '!') delete arr[i]
+    }
+    return arr.join('')+'!' 
+}
