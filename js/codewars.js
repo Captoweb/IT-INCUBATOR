@@ -239,6 +239,7 @@ function remainder(n, m){
     }
 }
 
+
 // Exclamation marks series #4
 function remove (string) {
     let arr = string.split('')
@@ -247,3 +248,66 @@ function remove (string) {
     }
     return arr.join('')+'!' 
 }
+
+
+// Ensure question
+function ensureQuestion(s) {
+    if (s[s.length - 1] != '?') {return s + '?'} else {return s}
+}
+
+
+// 23 декабря
+
+// Find the smallest integer in the array
+class SmallestIntegerFinder {
+    findSmallestInt(args) {
+      let min = args[0]
+      for (let i = 0; i < args.length; i++) {
+        if (args[i] < min) {
+           min = args[i]
+        }
+      }
+      return min
+    }
+}
+
+
+// 24 декабря 
+// Conference Traveller
+function conferencePicker (citiesVisited, citiesOffered) {
+    let res = []
+     for (let i = 0; i < citiesOffered.length; i++) {
+        if (!citiesVisited.includes(citiesOffered[i])) {
+           res.push(citiesOffered[i])
+        }
+    }
+     if (res[0] == undefined) {return ('No worthwhile conferences this year!')}
+        return res[0] 
+}
+
+// 140 очков
+
+
+// Get the mean of an array
+function getAverage(marks){
+    let sum = 0
+    marks.map(item => {
+      sum += item
+    })
+    return Math.floor(sum / marks.length)
+}
+
+
+// Reversed sequence 
+const reverseSeq = n => {
+    let arr = []
+    for (let i = n; i >= 1; i--) {
+      arr.push(i)
+    }
+    return arr
+}
+
+
+
+
+
