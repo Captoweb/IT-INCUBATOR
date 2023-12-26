@@ -308,6 +308,16 @@ const reverseSeq = n => {
 }
 
 
+// 26 декабря
 
+// Find the missing element between two arrays
+function findMissing(arr1, arr2) {
+  for (let i = 0; i < arr1.length; i++) {
+     let index = arr2.indexOf(arr1[i])
+     if (index > -1) {
+        delete arr2[index]
+     } else return arr1[i]
+  }
+}
 
 
