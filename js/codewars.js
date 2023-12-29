@@ -321,3 +321,55 @@ function findMissing(arr1, arr2) {
 }
 
 
+
+// 29 декабря
+// Duplicate Encoder
+
+function duplicateEncode(word){
+
+    word = word.toLowerCase()
+    word = word.split('')
+    let object = {}
+  
+    for (let el of word) {
+        if (object[el] = object[el]) {
+            object[el]++
+        } else {
+            object[el] = 1
+        }
+    }
+  
+    word = word.map(item => {
+        if (object[item] > 1) {
+            return ')'
+        } else {
+            return '('
+        }
+    })
+    return word.join('')
+  }
+  
+
+// Sleigh Authentication
+function Sleigh() {}
+
+ Sleigh.prototype.authenticate = function(name, password) {
+   if (name == "Santa Claus" && password == "Ho Ho Ho!") {
+        return true
+    } else {
+        return false
+    }
+ };  
+
+
+ // Convert number to reversed array of digits
+ function digitize(n) {
+    let arr = n.toString().split('')
+    let newArr = []
+  
+    for (let i = arr.length - 1; i >= 0; i--) {
+        newArr.push(+(arr[i]))
+    }
+  
+    return newArr
+  }
