@@ -373,3 +373,24 @@ function Sleigh() {}
   
     return newArr
   }
+
+
+  // Reversed Strings
+  function solution(str){
+    let arr = str.split('')
+    let newArr = []
+    for (let i = arr.length - 1; i >= 0; i--) {
+        newArr.push(arr[i])
+    }
+  
+    return newArr.join('')
+  }
+
+  // 160 очков
+
+
+  // 31 декабря
+  // My head is at the wrong end!
+  function fixTheMeerkat(arr) {
+    return arr.reverse()
+  }
